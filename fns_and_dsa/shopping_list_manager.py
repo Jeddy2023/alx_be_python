@@ -1,16 +1,17 @@
 def display_menu():
-    print("\nShopping List Manager")
+    # Print the menu title
+    print("\nShopping List Manager")  # This should match exactly as expected
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
     print("4. Exit")
 
 def main():
-    shopping_list = []
+    shopping_list = []  # Ensure shopping_list is correctly defined
 
     while True:
-        display_menu()
-        choice = input("Enter your choice: ")
+        display_menu()  # Call the display_menu function
+        choice = input("Enter your choice (1-4): ")  # Explicit prompt to indicate valid choices
 
         if choice == '1':
             # Prompt for and add an item
@@ -41,7 +42,7 @@ def main():
             break
 
         else:
-            print("Invalid choice. Please try again.")
+            print("Invalid choice. Please try again.")  # Handle invalid choices
 
 if __name__ == "__main__":
     main()
